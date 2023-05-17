@@ -18,4 +18,9 @@ export default defineConfig({
       fileName: (format) => `my-component.${format}.js`
     },
   },
+  define: {
+    'process.env': {
+      NODE_ENV: JSON.stringify("production"),
+    }
+  }
 });
